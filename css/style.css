@@ -1,0 +1,157 @@
+/* ここから下に記載していく
+
+html {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#main img {
+  max-width: 100%;
+  height: auto;
+}
+
+#main h1 {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+h1:hover {
+        letter-spacing: 20px;
+      } */
+
+/* h1 {
+  position: absolute;
+  font-size: 100px;
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  padding: 30px;
+} */
+/* styles.css */
+
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+#header{
+    display:flex;
+    justify-content: space-between;
+    font-size: 40px;
+    line-height: 30px;
+    margin: 15px;
+}
+
+h2{
+    margin-top:50px;
+    font-size: 30px;
+    
+}
+
+#input{
+    display: flex;
+    justify-content: center;
+   
+}
+
+#input button {
+    font-size: 20px;
+    padding:20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+#input button:hover {
+    background-color: orangered;
+}
+
+#game {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left:150px;
+    padding-right:150px;
+    
+}
+
+.vs{
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#computer-choice, #player-choice {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+}
+
+#computer-img,
+#player-img {
+    width: 150px;
+    height: 150px;
+    
+}
+
+#result {
+    margin-top: 10px;
+}
+
+#outcome {
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+#restart{
+    background-color: blue;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    margin-top:50px;
+    padding:20px;
+    border-radius: 20px;
+}
