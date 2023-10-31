@@ -26,7 +26,7 @@ const outcomes = {
   paper: { beats: "rock", message: "Paper covers Rock. You win!" },
   scissors: { beats: "paper", message: "Scissors cut Paper. You win!" },
 };
-const audio = ["audio/rock.m4a", "audio/paper.m4a", "audio/scissors"]
+const audio = ["audio/rock.m4a", "audio/paper.m4a", "audio/scissors.m4a"]
 let playerScore = 0;
 let computerScore = 0;
 let playnumber = 0;
