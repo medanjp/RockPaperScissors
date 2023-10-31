@@ -29,6 +29,7 @@ const outcomes = {
 const audio = ["audio/rock.m4a", "audio/paper.m4a", "audio/scissors"]
 let playerScore = 0;
 let computerScore = 0;
+let playnumber = 0;
 function computerPlay() {
     const random = Math.floor(Math.random() * choices.length);
     return choices[random];
@@ -36,7 +37,7 @@ function computerPlay() {
 $("#input button").on("click", function () {
   const playerChoice = this.id;
   const computerChoice = computerPlay();
-  
+  playnumber ++;
   
   $("#computer-choice").text(computerChoice);
   $("#player-choice").text(playerChoice);
@@ -60,10 +61,6 @@ $("#input button").on("click", function () {
   }
   $("#playerscore").text("Player Win: " + playerScore);
   $("#computerscore").text("Computer Win : " + computerScore);
-
-  if (pl) {
-    
-  }
 
 });
 
