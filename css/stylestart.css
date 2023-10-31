@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+#start-button {
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+#start {
+    display: block;
+    background-color: orange;
+    color: white;
+    padding: 15px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#start:hover {
+    background-color: orangered;
+}
+img {
+    padding:10px;
+    display: block;
+    width: 200px;
+    height: 200px;
+}

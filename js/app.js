@@ -13,12 +13,20 @@
 //     $("img").attr("src", "img/hand_gu-2.png");
 // }
 // });
+$(document).ready(function () {
+  $("#start").on("click", function () {
+      // Redirect to the "index.html" page
+      window.location.href = "index.html";
+  });
+});
+
 const choices = ["rock", "paper", "scissors"];
 const outcomes = {
   rock: { beats: "scissors", message: "Rock smashes Scissors. You win!" },
   paper: { beats: "rock", message: "Paper covers Rock. You win!" },
   scissors: { beats: "paper", message: "Scissors cut Paper. You win!" },
 };
+const audio = ["audio/rock.m4a", "audio/paper.m4a", "audio/scissors"]
 let playerScore = 0;
 let computerScore = 0;
 function computerPlay() {
@@ -28,13 +36,18 @@ function computerPlay() {
 $("#input button").on("click", function () {
   const playerChoice = this.id;
   const computerChoice = computerPlay();
+  
+  
   $("#computer-choice").text(computerChoice);
   $("#player-choice").text(playerChoice);
 
+  $("audio#choice").attr("src", "audio/" + playerChoice + ".m4a");
+  $("audio#choice").get(0).play();
   // Set images for player and computer choices
   $("#player-img").attr("src", "img/" + playerChoice + ".png");
   $("#computer-img").attr("src", "img/" + computerChoice + ".png");
 
+  
   if (playerChoice === computerChoice) {
     $("#outcome").text("It's a tie!");
   } else if (outcomes[playerChoice].beats === computerChoice) {
@@ -47,8 +60,13 @@ $("#input button").on("click", function () {
   }
   $("#playerscore").text("Player Win: " + playerScore);
   $("#computerscore").text("Computer Win : " + computerScore);
+
+  if (pl) {
+    
+  }
+
 });
 
 $("#restart").on("click", function () {
-    location.reload();
+    window.location.href = "start.html";
 });
